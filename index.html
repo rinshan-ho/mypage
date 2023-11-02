@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>画像連結ツール</title>
+        </head>
+    <body>
+        <h1>画像連結ツール</h1>
+        <button onclick="yoko()">横向き</button>
+        <button onclick="tate()">縦向き</button>
+        
+        <form>
+            <input id="select" type="file" accept='image/*' onchange="yoko();" multiple="multiple">
+        </form>
+        <br>
+        <button id="download">保存</button>
+        <br>
+        <canvas id="canvas" width="" height="" style="background-color:black;"></canvas>
+        <script src="./main.js"></script>
+
+    </body>
+</html>
